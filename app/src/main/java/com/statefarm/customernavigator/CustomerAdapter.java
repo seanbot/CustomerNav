@@ -52,6 +52,7 @@ public class CustomerAdapter extends BaseAdapter {
             String customerPriority = custList.get(position).getPriority();
             tvCustomer.setText(customerName);
             tvPriority.setText(customerPriority);
+            tvPriority.setTextColor(MainApplication.getInstance().getColorDependingOnPriority(customerPriority));
         }
         return row;
     }

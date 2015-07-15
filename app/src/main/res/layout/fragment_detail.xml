@@ -21,9 +21,9 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Name"
             android:id="@+id/tvDetailName"
-            android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/imageView"
-            android:layout_margin="8dp" />
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,18 +31,58 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Priority"
             android:id="@+id/tvDetailPriority"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
-            android:layout_margin="12dp" />
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Passive Customer"
-            android:id="@+id/textView"
-            android:layout_alignParentBottom="true"
-            android:layout_toEndOf="@+id/imageView" />
+            android:id="@+id/tvType"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignStart="@+id/tvDetailName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="123 Main Street"
+            android:id="@+id/tvAddressOne"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Atlanta, GA 12345"
+            android:id="@+id/tvAddressTwo"
+            android:layout_below="@+id/tvAddressOne"
+            android:layout_alignLeft="@+id/tvAddressOne" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="555-404-3214"
+            android:id="@+id/tvPhone"
+            android:layout_below="@+id/tvAddressTwo"
+            android:layout_alignLeft="@+id/tvAddressTwo"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="email@gmail.com"
+            android:id="@+id/tvEmail"
+            android:layout_marginTop="8dp"
+            android:layout_alignLeft="@+id/tvPhone"
+            android:layout_below="@+id/tvPhone" />
     </RelativeLayout>
 
 </ScrollView>

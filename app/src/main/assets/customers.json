@@ -1,27 +1,27 @@
 //name, sex, address, address 2, birthday, # family members, time w/state farm, # claims, policies 1 2 3, premium 1 2 3, shopping, type
-
-[
-  [
-    "John C. Creek",
-  "M",
-  "2420 ABC Parkway",
-  "College Park, GA 30028",
-  "10/10/78",
-  "1",
-  "1 month",
-  "0",
-  "Auto",
-  "",
-  "",
-  "100",
-  "",
-  "",
-  "No",
-  "Self Sufficient"
+{
+  "customers": [
+    {
+      "name": "John C. Creek",
+      "sex": "M",
+      "address": "2420 ABC Parkway",
+      "citystate": "College Park, GA 30028",
+      "dob": "10/10/78",
+      "householdsize": "1",
+      "duration": "1 month",
+      "claims": "0",
+      "policy1": "Auto",
+      "policy2": "",
+      "policy3": "",
+      "premium1": "100",
+      "premium2": "",
+      "premium3": "",
+      "shopping": "No",
+      "type": "Self Sufficient"
   ],
 
   [
-  "David Mac",
+    "name": "David Mac",
   "M",
   "3430 XYZ Dr",
   "Atlanta, GA 30346",
@@ -40,7 +40,7 @@
   ],
 
   [
-    "Steve Apple",
+    "name": "Steve Apple",
   "M",
   "123 EFG DR",
   "Atlanta, GA 30346",
@@ -59,7 +59,7 @@
   ],
 
   [
-  "Steve Android",
+    "name": "Steve Android",
   "M",
   "7654 DSA CT",
   "Dunwoody, GA 30346",
@@ -78,7 +78,7 @@
   ],
 
   [
-  "Ann S. Mary",
+    "name": "Ann S. Mary",
   "F",
   "4320 JKL BLVD",
   "Tampa, FL 34521",
@@ -97,7 +97,7 @@
   ],
 
   [
-  "Dan Jobs",
+    "name": "Dan Jobs",
   "F",
   "654 FGC BLVD",
   "Miami, FL 21341",
@@ -116,7 +116,7 @@
   ],
 
   [
-  "Jenny A. Apps",
+    "name": "Jenny A. Apps",
   "F",
   "9876 dswe DR",
   "Orlando, FL 21345",
@@ -135,7 +135,7 @@
   ],
 
   [
-  "Tiana Droid",
+    "name": "Tiana Droid",
   "F",
   "654 Hallo DR",
   "Key west, FL 90675",
@@ -154,7 +154,7 @@
   ],
 
   [
-  "James Bond",
+    "name": "James Bond",
   "M",
   "8231 James Dr",
   "Herndon, VA 20170",
@@ -173,7 +173,7 @@
   ],
 
   [
-  "Ann Jay",
+    "name": "Ann Jay",
   "F",
   "4321 Washington",
   "Washington, DC 21034",
@@ -192,7 +192,7 @@
   ],
 
   [
-  "Peter City",
+    "name": "Peter City",
   "M",
   "9087 Lee DR",
   "Washington, NC 23119",
@@ -211,7 +211,7 @@
   ],
 
   [
-  "James Monday",
+    "name": "James Monday",
   "M",
   "7650 State Place",
   "Charleston, SC 65742",
@@ -230,7 +230,7 @@
   ],
 
   [
-  "Troy City",
+    "name": "Troy City",
   "M",
   "5678 Dump DR",
   "Key west, AL 56432",
@@ -249,7 +249,7 @@
   ],
 
   [
-  "Sandy Spring",
+    "name": "Sandy Spring",
   "F",
   "3212 Jump Dr",
   "Reston, TN 98795",
@@ -268,7 +268,7 @@
   ],
 
   [
-  "Brad Lee",
+    "name": "Brad Lee",
   "M",
   "4573 AMC CT",
   "Palm Beach, TN 43876",
@@ -284,6 +284,6 @@
   "8",
   "No",
   "Demanding Local Shopper"
-    ]
-
-]
+  ]
+  ]
+}
