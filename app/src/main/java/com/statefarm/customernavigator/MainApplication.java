@@ -78,11 +78,11 @@ public class MainApplication extends Application {
 
     public int getColorDependingOnPriority(String priority){
         if(priority.toUpperCase().contentEquals("HIGH")) {
-            return Color.RED;
+            return Color.parseColor("#F21818");
         } else if (priority.toUpperCase().contentEquals("LOW")){
-            return Color.GREEN;
+            return Color.parseColor("#19BF32");
         } else if (priority.toUpperCase().contentEquals("MEDIUM")) {
-            return Color.YELLOW;
+            return Color.parseColor("#DEC328");
         } else return Color.BLACK;
     }
 

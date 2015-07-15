@@ -34,8 +34,13 @@ public class MainActivity extends ActionBarActivity implements MainActivityFragm
         //call the new fragment with the position of the item in the list.
         DetailFragment detailFrag = new DetailFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("name", MainApplication.getInstance().getCustomerArrayList().get(position).getName());
-        bundle.putString("priority", MainApplication.getInstance().getCustomerArrayList().get(position).getPriority());
+        Customer c = MainApplication.getInstance().getCustomerArrayList().get(position);
+        bundle.putString(Constants.NAME, c.getName());
+        bundle.putString(Constants.PRIORITY, c.getPriority());
+        bundle.putString(Constants.ADDRESS, c.getAddress());
+        bundle.putString(Constants.CITYSTATE, c.getCityState());
+        bundle.putString(Constants.DOB, c.getDob());
+        bundle.putString(Constants.PHONE, c.getPhone());
         detailFrag.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, detailFrag).addToBackStack(null).commit();
     }
