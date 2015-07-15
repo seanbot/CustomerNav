@@ -41,7 +41,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Passive Customer"
             android:id="@+id/textView"
-            android:layout_below="@+id/tvDetailName"
+            android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/imageView" />
     </RelativeLayout>
 
