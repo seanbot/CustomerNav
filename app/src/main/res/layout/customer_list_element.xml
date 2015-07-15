@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:minHeight="40dp">
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"></LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Customer Name"
         android:id="@+id/tvDetailName"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="0dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp"
-        android:gravity="center_vertical" />
+        android:layout_alignParentTop="false"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,5 +27,8 @@
         android:text="Priority"
         android:id="@+id/tvPriority"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

@@ -83,6 +83,132 @@
             android:layout_marginTop="8dp"
             android:layout_alignLeft="@+id/tvPhone"
             android:layout_below="@+id/tvPhone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Price: $999"
+            android:id="@+id/tvPrice"
+            android:layout_below="@+id/tvEmail"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp" />
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_alignTop="@+id/tvPrice"
+            android:layout_toEndOf="@+id/tvPhone"
+            android:progress="78"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="PendingRate Increase:"
+            android:id="@+id/textView"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/tvPrice"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Is Shopping:"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="YES"
+            android:id="@+id/tvIsShopping"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignStart="@+id/tvType"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1 month, +10%"
+            android:id="@+id/tvPendingRateIncrease"
+            android:layout_alignTop="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginLeft="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Age: 41"
+            android:id="@+id/tvAge"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Househould Size: 4"
+            android:id="@+id/tvHouseHoldSize"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/tvAge"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="# of Products : 3"
+            android:id="@+id/tvNumOfProducts"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/tvHouseHoldSize"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="# of Claims"
+            android:id="@+id/tvNumOfClaims"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/tvNumOfProducts"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Years With State Farm: "
+            android:id="@+id/tvYearsWithSFLabel"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/tvNumOfClaims"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2"
+            android:id="@+id/tvYearsWithSF"
+            android:layout_toRightOf="@+id/tvYearsWithSFLabel"
+            android:layout_alignBottom="@+id/tvYearsWithSFLabel" />
+
     </RelativeLayout>
 
 </ScrollView>
