@@ -45,7 +45,7 @@ public class CustomerAdapter extends BaseAdapter {
             LayoutInflater mInflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = mInflater.inflate(R.layout.customer_list_element, null);
-            final TextView tvCustomer = (TextView) row.findViewById(R.id.tvName);
+            final TextView tvCustomer = (TextView) row.findViewById(R.id.tvDetailName);
             final TextView tvPriority = (TextView) row.findViewById(R.id.tvPriority);
 
             String customerName = custList.get(position).getName();

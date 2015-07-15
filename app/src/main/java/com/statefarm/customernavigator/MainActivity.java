@@ -4,33 +4,35 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements MainActivityFragment.OnCustomerSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Check that the activity is using the layout version with
-        // the fragment_container FrameLayout
         if (findViewById(R.id.fragment_container) != null) {
 
-            // However, if we're being restored from a previous state,
-            // then we don't need to do anything and should return or else
-            // we could end up with overlapping fragments.
             if (savedInstanceState != null) {
                 return;
             }
 
-            // Create a new Fragment to be placed in the activity layout
             MainActivityFragment listFragment = new MainActivityFragment();
 
-            // In case this activity was started with special instructions from an
-            // Intent, pass the Intent's extras to the fragment as arguments
             listFragment.setArguments(getIntent().getExtras());
 
-            // Add the fragment to the 'fragment_container' FrameLayout
             getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, listFragment).commit();
         }
+    }
+
+    @Override
+    public void onCustomerSelected(int position) {
+        //call the new fragment with the position of the item in the list.
+        DetailFragment detailFrag = new DetailFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("name", MainApplication.getInstance().getCustomerArrayList().get(position).getName());
+        bundle.putString("priority", MainApplication.getInstance().getCustomerArrayList().get(position).getPriority());
+        detailFrag.setArguments(bundle);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, detailFrag).addToBackStack(null).commit();
     }
 }

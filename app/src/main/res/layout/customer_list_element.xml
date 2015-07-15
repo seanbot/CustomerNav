@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="Customer Name"
-        android:id="@+id/tvName"
+        android:id="@+id/tvDetailName"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
         android:layout_alignParentTop="true"
