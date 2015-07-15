@@ -30,7 +30,7 @@ public class MainApplication extends Application {
 
         // TODO: Create new ArrayList and popupalte the data... append to the customerArrayList;
         try {
-            JSONObject obj = new JSONObject(loadJSONFromAsset("dummy.json"));
+            JSONObject obj = new JSONObject(loadJSONFromAsset("customers.json"));
             JSONArray m_jArry = obj.getJSONArray("customers");
             customerArrayList = new ArrayList();
             for (int i = 0; i < m_jArry.length(); i++) {
