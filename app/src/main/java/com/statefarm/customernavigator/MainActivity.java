@@ -2,20 +2,22 @@ package com.statefarm.customernavigator;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 
-public class MainActivity extends FragmentActivity implements MainActivityFragment.OnCustomerSelectedListener{
+public class MainActivity extends ActionBarActivity implements MainActivityFragment.OnCustomerSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Log.d("herpderp", loadJSONFromAsset("customers.json"));
+//        Log.d("herpderp", loadJSONFromAsset("customers.json"));
 
         if (findViewById(R.id.fragment_container) != null) {
 
@@ -30,15 +32,6 @@ public class MainActivity extends FragmentActivity implements MainActivityFragme
             getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, listFragment).commit();
         }
     }
-//
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu items for use in the action bar
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu_main, menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
-
 
     @Override
     public void onCustomerSelected(int position) {
@@ -51,10 +44,30 @@ public class MainActivity extends FragmentActivity implements MainActivityFragme
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, detailFrag).addToBackStack(null).commit();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    // Menu options to set and cancel the alarm.
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.seach_action:
+                //handle the search action
+                return true;
+        }
+        return false;
+    }
+
+
     public String loadJSONFromAsset(String filename) {
         String json = null;
         try {
-            InputStream is = getActivity().getAssets().open(filename);
+            InputStream is = getAssets().open(filename);
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
