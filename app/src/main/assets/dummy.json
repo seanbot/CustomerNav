@@ -1,0 +1,59 @@
+//name, sex, address, address 2, birthday, # family members, time w/state farm, # claims, policies 1 2 3, premium 1 2 3, shopping, type
+{
+  "customers": [
+    {
+      "name": "John C. Creek",
+      "sex": "M",
+      "address": "2420 ABC Parkway",
+      "citystate": "College Park, GA 30028",
+      "dob": "10/10/78",
+      "householdsize": "1",
+      "duration": "1 month",
+      "claims": "0",
+      "policy1": "Auto",
+      "policy2": "",
+      "policy3": "",
+      "premium1": "100",
+      "premium2": "",
+      "premium3": "",
+      "shopping": "No",
+      "type": "Self Sufficient"
+    },
+    {
+      "name": "David Mac",
+      "sex": "M",
+      "address": "2420 ABC Parkway",
+      "citystate": "College Park, GA 30028",
+      "dob": "10/10/78",
+      "householdsize": "1",
+      "duration": "1 month",
+      "claims": "0",
+      "policy1": "Auto",
+      "policy2": "",
+      "policy3": "",
+      "premium1": "100",
+      "premium2": "",
+      "premium3": "",
+      "shopping": "No",
+      "type": "Self Sufficient"
+    },
+    {
+      "name": "Steve Apple",
+      "sex": "M",
+      "address": "2420 ABC Parkway",
+      "citystate": "College Park, GA 30028",
+      "dob": "10/10/78",
+      "householdsize": "1",
+      "duration": "1 month",
+      "claims": "0",
+      "policy1": "Auto",
+      "policy2": "",
+      "policy3": "",
+      "premium1": "100",
+      "premium2": "",
+      "premium3": "",
+      "shopping": "No",
+      "type": "Self Sufficient"
+    }
+  ]
+}

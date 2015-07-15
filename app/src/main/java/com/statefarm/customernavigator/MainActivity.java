@@ -22,23 +22,28 @@ public class MainActivity extends FragmentActivity implements MainActivityFragme
         setContentView(R.layout.activity_main);
 
         try {
-            JSONObject obj = new JSONObject(loadJSONFromAsset("customers.json"));
-            JSONArray m_jArry = obj.getJSONArray("formules");
-            ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
-            HashMap<String, String> m_li;
+            JSONObject obj = new JSONObject(loadJSONFromAsset("dummy.json"));
+            JSONArray m_jArry = obj.getJSONArray("customers");
 
+            ArrayList<Customer> customers = new ArrayList<Customer>();
             for (int i = 0; i < m_jArry.length(); i++) {
+                Customer cust = new Customer();
                 JSONObject jo_inside = m_jArry.getJSONObject(i);
-                Log.d("Details-->", jo_inside.getString("formule"));
-                String formula_value = jo_inside.getString("formule");
-                String url_value = jo_inside.getString("url");
-
-                //Add your values in your `ArrayList` as below:
-                m_li = new HashMap<String, String>();
-                m_li.put("formule", formula_value);
-                m_li.put("url", url_value);
-
-                formList.add(m_li);
+                cust.setName(jo_inside.getString("name"));
+                cust.setGender(jo_inside.getString("sex"));
+                cust.setDob(jo_inside.getString("dob"));
+                cust.setHouseholdSize(jo_inside.getString("householdsize"));
+                cust.setNumClaims(jo_inside.getString("claims"));
+                cust.setPolicy1(jo_inside.getString("policy1"));
+                cust.setPolicy2(jo_inside.getString("policy2"));
+                cust.setPolicy3(jo_inside.getString("policy3"));
+                cust.setPremium1(jo_inside.getString("premium1"));
+                cust.setPremium2(jo_inside.getString("premium2"));
+                cust.setPremium3(jo_inside.getString("premium3"));
+                cust.setIsShopping(jo_inside.getString("shopping"));
+                cust.setCustomerSegment(jo_inside.getString("type"));
+                customers.add(cust);
+                Log.d("name -->", cust.getName());
             }
         } catch (JSONException e) {
             e.printStackTrace();

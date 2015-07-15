@@ -7,6 +7,7 @@ public class Customer {
     private String name;
     private String priority;
     private String gender;
+    private String dob;
     private String address;
     private String cityState;
     private String householdSize;
@@ -27,6 +28,14 @@ public class Customer {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
     }
 
     public String getAddress() {
