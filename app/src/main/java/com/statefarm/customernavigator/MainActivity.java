@@ -1,7 +1,7 @@
 package com.statefarm.customernavigator;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 
 public class MainActivity extends FragmentActivity implements MainActivityFragment.OnCustomerSelectedListener{
@@ -24,6 +24,15 @@ public class MainActivity extends FragmentActivity implements MainActivityFragme
             getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, listFragment).commit();
         }
     }
+//
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu items for use in the action bar
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.menu_main, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+
 
     @Override
     public void onCustomerSelected(int position) {
