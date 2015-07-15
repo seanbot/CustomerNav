@@ -10,6 +10,8 @@ public class Customer {
     private String dob;
     private String address;
     private String cityState;
+    private String phone;
+    private String email;
     private String householdSize;
     private String timeWithStateFarm;
     private String numClaims;
@@ -21,6 +23,9 @@ public class Customer {
     private String premium3;
     private String isShopping;
     private String customerSegment;
+    private String rateIncreaseTime;
+    private String rateIncreasePercent;
+    private String numDiscounts;
 
     public String getGender() {
         return gender;
@@ -52,6 +57,22 @@ public class Customer {
 
     public void setCityState(String cityState) {
         this.cityState = cityState;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getHouseholdSize() {
@@ -140,6 +161,30 @@ public class Customer {
 
     public void setCustomerSegment(String customerSegment) {
         this.customerSegment = customerSegment;
+    }
+
+    public String getRateIncreaseTime() {
+        return rateIncreaseTime;
+    }
+
+    public void setRateIncreaseTime(String rateIncreaseTime) {
+        this.rateIncreaseTime = rateIncreaseTime;
+    }
+
+    public String getRateIncreasePercent() {
+        return rateIncreasePercent;
+    }
+
+    public void setRateIncreasePercent(String rateIncreasePercent) {
+        this.rateIncreasePercent = rateIncreasePercent;
+    }
+
+    public String getNumDiscounts() {
+        return numDiscounts;
+    }
+
+    public void setNumDiscounts(String numDiscounts) {
+        this.numDiscounts = numDiscounts;
     }
 
     public String getName() {

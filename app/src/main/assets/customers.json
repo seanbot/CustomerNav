@@ -21,7 +21,10 @@
               "premium2": "",
               "premium3": "",
               "shopping": "No",
-              "type": "Self Sufficient"
+              "type": "Self Sufficient",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "0"
             },
             {
               "name": "David Mac",
@@ -42,7 +45,10 @@
               "premium2": "200",
               "premium3": "",
               "shopping": "No",
-              "type": "Self Sufficient"
+              "type": "Self Sufficient",
+              "rateincreasetime": "3 months",
+              "rateincreasepercent": "2",
+              "discounts": "1"
             },
             {
               "name": "Steve Apple",
@@ -63,7 +69,10 @@
               "premium2": "150",
               "premium3": "24",
               "shopping": "No",
-              "type": "Relationship Seeker"
+              "type": "Relationship Seeker",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "3"
             },
             {
               "name": "Steve Android",
@@ -84,7 +93,10 @@
               "premium2": "",
               "premium3": "",
               "shopping": "Yes",
-              "type": "Frequent Shopper"
+              "type": "Frequent Shopper",
+              "rateincreasetime": "1 month",
+              "rateincreasepercent": "7",
+              "discounts": "1"
             },
             {
               "name": "Ann S. Mary",
@@ -105,7 +117,10 @@
               "premium2": "",
               "premium3": "",
               "shopping": "No",
-              "type": "Demanding Local Shopper"
+              "type": "Demanding Local Shopper",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "0"
             },
             {
               "name": "Dan Jobs",
@@ -126,7 +141,10 @@
               "premium2": "97",
               "premium3": "19",
               "shopping": "Yes",
-              "type": "Relationship Seeker"
+              "type": "Relationship Seeker",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "2"
             },
             {
               "name": "Jenny A. Apps",
@@ -147,7 +165,10 @@
               "premium2": "87",
               "premium3": "",
               "shopping": "No",
-              "type": "Frequent Shopper"
+              "type": "Frequent Shopper",
+              "rateincreasetime": "1 month",
+              "rateincreasepercent": "2",
+              "discounts": "1"
             },
             {
               "name": "Tiana Droid",
@@ -168,7 +189,10 @@
               "premium2": "",
               "premium3": "",
               "shopping": "Yes",
-              "type": "Self Sufficient"
+              "type": "Self Sufficient",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "0"
             },
             {
               "name": "James Bond",
@@ -189,7 +213,10 @@
               "premium2": "",
               "premium3": "10",
               "shopping": "No",
-              "type": "Frequent Shopper"
+              "type": "Frequent Shopper",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "1"
             },
             {
               "name": "Ann Jay",
@@ -210,7 +237,10 @@
               "premium2": "",
               "premium3": "",
               "shopping": "No",
-              "type": "Self Sufficient"
+              "type": "Self Sufficient",
+              "rateincreasetime": "1 week",
+              "rateincreasepercent": "8",
+              "discounts": "0"
             },
             {
               "name": "Peter City",
@@ -231,7 +261,10 @@
               "premium2": "45",
               "premium3": "",
               "shopping": "Yes",
-              "type": "Relationship Seeker"
+              "type": "Relationship Seeker",
+              "rateincreasetime": "3 weeks",
+              "rateincreasepercent": "5",
+              "discounts": "0"
             },
             {
               "name": "James Monday",
@@ -252,7 +285,10 @@
               "premium2": "78",
               "premium3": "",
               "shopping": "Yes",
-              "type": "Relationship Seeker"
+              "type": "Relationship Seeker",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "2"
             },
             {
               "name": "Troy City",
@@ -273,7 +309,10 @@
               "premium2": "",
               "premium3": "12",
               "shopping": "Yes",
-              "type": "Self Sufficient"
+              "type": "Self Sufficient",
+              "rateincreasetime": "2 month",
+              "rateincreasepercent": "1",
+              "discounts": "1"
             },
             {
               "name": "Sandy Spring",
@@ -294,7 +333,10 @@
               "premium2": "34",
               "premium3": "",
               "shopping": "No",
-              "type": "Relationship Seeker"
+              "type": "Relationship Seeker",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "2"
             },
             {
               "name": "Brad Lee",
@@ -315,7 +357,10 @@
               "premium2": "",
               "premium3": "8",
               "shopping": "No",
-              "type": "Demanding Local Shopper"
+              "type": "Demanding Local Shopper",
+              "rateincreasetime": "none",
+              "rateincreasepercent": "",
+              "discounts": "2"
             }
           ]
 }

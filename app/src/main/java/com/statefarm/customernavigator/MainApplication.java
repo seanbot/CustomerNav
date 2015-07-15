@@ -39,8 +39,13 @@ public class MainApplication extends Application {
                 cust.setName(jo_inside.getString("name"));
                 cust.setGender(jo_inside.getString("sex"));
                 cust.setPriority(jo_inside.getString("priority"));
+                cust.setAddress(jo_inside.getString("address"));
+                cust.setCityState(jo_inside.getString("citystate"));
+                cust.setPhone(jo_inside.getString("phone"));
+                cust.setEmail(jo_inside.getString("email"));
                 cust.setDob(jo_inside.getString("dob"));
                 cust.setHouseholdSize(jo_inside.getString("householdsize"));
+                cust.setTimeWithStateFarm(jo_inside.getString("duration"));
                 cust.setNumClaims(jo_inside.getString("claims"));
                 cust.setPolicy1(jo_inside.getString("policy1"));
                 cust.setPolicy2(jo_inside.getString("policy2"));
@@ -50,6 +55,10 @@ public class MainApplication extends Application {
                 cust.setPremium3(jo_inside.getString("premium3"));
                 cust.setIsShopping(jo_inside.getString("shopping"));
                 cust.setCustomerSegment(jo_inside.getString("type"));
+                cust.setRateIncreaseTime(jo_inside.getString("rateincreasetime"));
+                cust.setRateIncreasePercent(jo_inside.getString("rateincreasepercent"));
+                cust.setNumDiscounts(jo_inside.getString("discounts"));
+
                 customerArrayList.add(cust);
                 Log.d("name -->", cust.getName());
             }
