@@ -30,6 +30,7 @@ public class DetailFragment extends Fragment {
         Bundle bundle = getArguments();
         tvName.setText(bundle.getString("name"));
         tvPriority.setText(bundle.getString("priority"));
+        tvPriority.setTextColor(MainApplication.getInstance().getColorDependingOnPriority(bundle.getString("priority")));
 
         return v;
     }

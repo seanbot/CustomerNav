@@ -4,6 +4,7 @@
     {
       "name": "John C. Creek",
       "sex": "M",
+      "priority": "High",
       "address": "2420 ABC Parkway",
       "citystate": "College Park, GA 30028",
       "dob": "10/10/78",
@@ -22,6 +23,7 @@
     {
       "name": "David Mac",
       "sex": "M",
+      "priority": "Low",
       "address": "2420 ABC Parkway",
       "citystate": "College Park, GA 30028",
       "dob": "10/10/78",
@@ -40,6 +42,7 @@
     {
       "name": "Steve Apple",
       "sex": "M",
+      "priority": "Medium",
       "address": "2420 ABC Parkway",
       "citystate": "College Park, GA 30028",
       "dob": "10/10/78",
