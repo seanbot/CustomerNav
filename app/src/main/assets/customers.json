@@ -1,8 +1,8 @@
 //name, sex, address, address 2, birthday, # family members, time w/state farm, # claims, policies 1 2 3, premium 1 2 3, shopping, type
-
-[
+{
+  "customers": [
   [
-    "John C. Creek",
+  "John C. Creek",
   "M",
   "2420 ABC Parkway",
   "College Park, GA 30028",
@@ -40,7 +40,7 @@
   ],
 
   [
-    "Steve Apple",
+  "Steve Apple",
   "M",
   "123 EFG DR",
   "Atlanta, GA 30346",
@@ -284,6 +284,6 @@
   "8",
   "No",
   "Demanding Local Shopper"
-    ]
-
-]
+  ]
+  ]
+}
