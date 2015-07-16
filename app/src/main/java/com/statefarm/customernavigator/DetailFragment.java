@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 import org.w3c.dom.Text;
 
@@ -25,6 +26,7 @@ public class DetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v =inflater.inflate(R.layout.fragment_detail, container, false);
+        ImageView iv= (ImageView) v.findViewById(R.id.imageView);
         TextView tvName = (TextView) v.findViewById(R.id.tvDetailName);
         TextView tvPriority = (TextView) v.findViewById(R.id.tvDetailPriority);
         TextView tvType = (TextView) v.findViewById(R.id.tvType);
@@ -41,6 +43,7 @@ public class DetailFragment extends Fragment {
         TextView tvNumClaims = (TextView) v.findViewById(R.id.tvNumOfClaims);
         TextView tvTimeWithSF = (TextView) v.findViewById(R.id.tvYearsWithSF);
         ProgressBar pb = (ProgressBar) v.findViewById(R.id.progressBar);
+
 
         Bundle bundle = getArguments();
         tvName.setText(bundle.getString(Constants.NAME));
@@ -59,7 +62,13 @@ public class DetailFragment extends Fragment {
         tvNumProducts.setText("Products: " + bundle.getString(Constants.POLICIES));
         tvNumClaims.setText("# of Claims: " + bundle.getInt(Constants.NUMCLAIMS)+"");
         tvTimeWithSF.setText(bundle.getString(Constants.TIMEWITHSF));
-        pb.setProgress(bundle.getInt(Constants.PREMIUM)/10);
+        Integer householdSize = bundle.getInt(Constants.HOUSESIZE);
+        if (householdSize > 1) {
+            iv.setImageResource(R.drawable.family);
+        }
+        else {
+            iv.setImageResource(R.drawable.ic_face_black_24dp);
+        }        pb.setProgress(bundle.getInt(Constants.PREMIUM)/10);
         return v;
     }
 
