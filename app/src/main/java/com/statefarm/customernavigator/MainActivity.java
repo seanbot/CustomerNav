@@ -41,6 +41,12 @@ public class MainActivity extends ActionBarActivity implements MainActivityFragm
         bundle.putString(Constants.CITYSTATE, c.getCityState());
         bundle.putString(Constants.DOB, c.getDob());
         bundle.putString(Constants.PHONE, c.getPhone());
+        bundle.putString(Constants.EMAIL, c.getEmail());
+        bundle.putString(Constants.POLICIES, c.getPolicies());
+        bundle.putInt(Constants.PREMIUM, c.getPremium());
+        bundle.putInt(Constants.HOUSESIZE, c.getHouseholdSize());
+        bundle.putString(Constants.TIMEWITHSF, c.getTimeWithStateFarm());
+        bundle.putInt(Constants.NUMCLAIMS, c.getNumClaims());
         detailFrag.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, detailFrag).addToBackStack(null).commit();
     }

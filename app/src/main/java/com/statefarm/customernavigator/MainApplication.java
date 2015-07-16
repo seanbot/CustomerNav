@@ -44,20 +44,16 @@ public class MainApplication extends Application {
                 cust.setPhone(jo_inside.getString("phone"));
                 cust.setEmail(jo_inside.getString("email"));
                 cust.setDob(jo_inside.getString("dob"));
-                cust.setHouseholdSize(jo_inside.getString("householdsize"));
+                cust.setHouseholdSize(jo_inside.getInt("householdsize"));
                 cust.setTimeWithStateFarm(jo_inside.getString("duration"));
-                cust.setNumClaims(jo_inside.getString("claims"));
-                cust.setPolicy1(jo_inside.getString("policy1"));
-                cust.setPolicy2(jo_inside.getString("policy2"));
-                cust.setPolicy3(jo_inside.getString("policy3"));
-                cust.setPremium1(jo_inside.getString("premium1"));
-                cust.setPremium2(jo_inside.getString("premium2"));
-                cust.setPremium3(jo_inside.getString("premium3"));
+                cust.setNumClaims(jo_inside.getInt("claims"));
+                cust.setPolicies(jo_inside.getString("policies"));
+                cust.setPremium(jo_inside.getInt("premium"));
                 cust.setIsShopping(jo_inside.getString("shopping"));
                 cust.setCustomerSegment(jo_inside.getString("type"));
                 cust.setRateIncreaseTime(jo_inside.getString("rateincreasetime"));
                 cust.setRateIncreasePercent(jo_inside.getString("rateincreasepercent"));
-                cust.setNumDiscounts(jo_inside.getString("discounts"));
+                cust.setNumDiscounts(jo_inside.getInt("discounts"));
 
                 customerArrayList.add(cust);
                 Log.d("name -->", cust.getName());

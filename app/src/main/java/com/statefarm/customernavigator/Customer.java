@@ -12,20 +12,16 @@ public class Customer {
     private String cityState;
     private String phone;
     private String email;
-    private String householdSize;
+    private Integer householdSize;
     private String timeWithStateFarm;
-    private String numClaims;
-    private String policy1;
-    private String policy2;
-    private String policy3;
-    private String premium1;
-    private String premium2;
-    private String premium3;
+    private Integer numClaims;
+    private String policies;
+    private Integer premium;
     private String isShopping;
     private String customerSegment;
     private String rateIncreaseTime;
     private String rateIncreasePercent;
-    private String numDiscounts;
+    private Integer numDiscounts;
 
     public String getGender() {
         return gender;
@@ -75,11 +71,11 @@ public class Customer {
         this.email = email;
     }
 
-    public String getHouseholdSize() {
+    public Integer getHouseholdSize() {
         return householdSize;
     }
 
-    public void setHouseholdSize(String householdSize) {
+    public void setHouseholdSize(Integer householdSize) {
         this.householdSize = householdSize;
     }
 
@@ -91,60 +87,28 @@ public class Customer {
         this.timeWithStateFarm = timeWithStateFarm;
     }
 
-    public String getNumClaims() {
+    public Integer getNumClaims() {
         return numClaims;
     }
 
-    public void setNumClaims(String numClaims) {
+    public void setNumClaims(Integer numClaims) {
         this.numClaims = numClaims;
     }
 
-    public String getPolicy1() {
-        return policy1;
+    public String getPolicies() {
+        return policies;
     }
 
-    public void setPolicy1(String policy1) {
-        this.policy1 = policy1;
+    public void setPolicies(String policies) {
+        this.policies = policies;
     }
 
-    public String getPolicy2() {
-        return policy2;
+    public Integer getPremium() {
+        return premium;
     }
 
-    public void setPolicy2(String policy2) {
-        this.policy2 = policy2;
-    }
-
-    public String getPolicy3() {
-        return policy3;
-    }
-
-    public void setPolicy3(String policy3) {
-        this.policy3 = policy3;
-    }
-
-    public String getPremium1() {
-        return premium1;
-    }
-
-    public void setPremium1(String premium1) {
-        this.premium1 = premium1;
-    }
-
-    public String getPremium2() {
-        return premium2;
-    }
-
-    public void setPremium2(String premium2) {
-        this.premium2 = premium2;
-    }
-
-    public String getPremium3() {
-        return premium3;
-    }
-
-    public void setPremium3(String premium3) {
-        this.premium3 = premium3;
+    public void setPremium(Integer premium) {
+        this.premium = premium;
     }
 
     public String getIsShopping() {
@@ -179,11 +143,11 @@ public class Customer {
         this.rateIncreasePercent = rateIncreasePercent;
     }
 
-    public String getNumDiscounts() {
+    public Integer getNumDiscounts() {
         return numDiscounts;
     }
 
-    public void setNumDiscounts(String numDiscounts) {
+    public void setNumDiscounts(Integer numDiscounts) {
         this.numDiscounts = numDiscounts;
     }
 
