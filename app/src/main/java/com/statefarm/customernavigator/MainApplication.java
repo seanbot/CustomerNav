@@ -37,6 +37,7 @@ public class MainApplication extends Application {
                 Customer cust = new Customer();
                 JSONObject jo_inside = m_jArry.getJSONObject(i);
                 cust.setName(jo_inside.getString("name"));
+                cust.setAge(jo_inside.getInt("age"));
                 cust.setGender(jo_inside.getString("sex"));
                 cust.setPriority(jo_inside.getString("priority"));
                 cust.setAddress(jo_inside.getString("address"));

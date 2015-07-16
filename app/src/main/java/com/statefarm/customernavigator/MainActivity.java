@@ -36,6 +36,7 @@ public class MainActivity extends ActionBarActivity implements MainActivityFragm
         Bundle bundle = new Bundle();
         Customer c = MainApplication.getInstance().getCustomerArrayList().get(position);
         bundle.putString(Constants.NAME, c.getName());
+        bundle.putInt(Constants.AGE, c.getAge());
         bundle.putString(Constants.PRIORITY, c.getPriority());
         bundle.putString(Constants.ADDRESS, c.getAddress());
         bundle.putString(Constants.CITYSTATE, c.getCityState());

@@ -195,7 +195,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Years With State Farm: "
+            android:text="Time With State Farm: "
             android:id="@+id/tvYearsWithSFLabel"
             android:layout_alignStart="@+id/tvIsShoppingLabel"
             android:layout_below="@+id/tvNumOfClaims"

@@ -5,6 +5,7 @@ package com.statefarm.customernavigator;
  */
 public class Customer {
     private String name;
+    private Integer age;
     private String priority;
     private String gender;
     private String dob;
@@ -22,6 +23,14 @@ public class Customer {
     private String rateIncreaseTime;
     private String rateIncreasePercent;
     private Integer numDiscounts;
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 
     public String getGender() {
         return gender;

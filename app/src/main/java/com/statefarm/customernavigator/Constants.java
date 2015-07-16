@@ -5,6 +5,8 @@ package com.statefarm.customernavigator;
  */
 public class Constants {
     public final static String NAME = "name";
+    public final static String AGE = "age";
+    public final static String SEX = "sex";
     public final static String PRIORITY = "priority";
     public final static String ADDRESS = "address";
     public final static String CITYSTATE = "citystate";
@@ -16,5 +18,10 @@ public class Constants {
     public final static String NUMCLAIMS = "numclaims";
     public final static String POLICIES = "policies";
     public final static String PREMIUM = "premium";
+    public final static String SHOPPING = "shopping";
+    public final static String TYPE = "type";
+    public final static String RATEINCREASETIME = "ratetime";
+    public final static String RATEINCREASEPERCENT = "ratepercent";
+    public final static String DISCOUNTS = "discounts";
 
 }
