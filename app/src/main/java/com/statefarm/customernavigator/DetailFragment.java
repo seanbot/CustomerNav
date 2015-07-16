@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -24,6 +25,7 @@ public class DetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v =inflater.inflate(R.layout.fragment_detail, container, false);
+        ImageView iv= (ImageView) v.findViewById(R.id.imageView);
         TextView tvName = (TextView) v.findViewById(R.id.tvDetailName);
         TextView tvPriority = (TextView) v.findViewById(R.id.tvDetailPriority);
         TextView tvType = (TextView) v.findViewById(R.id.tvType);
@@ -54,6 +56,13 @@ public class DetailFragment extends Fragment {
         tvIsShopping.setText(bundle.getString(Constants.SHOPPING));
         tvPendingRateIncrease.setText(bundle.getString(Constants.RATEINCREASETIME)+" "+bundle.getInt(Constants.RATEINCREASEPERCENT)+"%");
         tvAge.setText(bundle.getInt(Constants.AGE)+"");
+        Integer householdSize = bundle.getInt(Constants.HOUSESIZE);
+        if (householdSize > 1) {
+            iv.setImageResource(R.drawable.family);
+        }
+        else {
+            iv.setImageResource(R.drawable.ic_face_black_24dp);
+        }
         tvHouseholdSize.setText(bundle.getInt(Constants.HOUSESIZE)+"");
         tvNumProducts.setText(bundle.getString(Constants.POLICIES));
         tvNumClaims.setText(bundle.getInt(Constants.NUMCLAIMS)+"");
