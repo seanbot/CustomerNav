@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -32,14 +33,14 @@ public class DetailFragment extends Fragment {
         TextView tvPhone = (TextView) v.findViewById(R.id.tvPhone);
         TextView tvEmail = (TextView) v.findViewById(R.id.tvEmail);
         TextView tvPrice = (TextView) v.findViewById(R.id.tvPrice);
-        TextView tvIsShopping = (TextView) v.findViewById(R.id.tvIsShoppingLabel);
+        TextView tvIsShopping = (TextView) v.findViewById(R.id.tvIsShopping);
         TextView tvPendingRateIncrease = (TextView) v.findViewById(R.id.tvPendingRateIncrease);
         TextView tvAge = (TextView) v.findViewById(R.id.tvAge);
         TextView tvHouseholdSize = (TextView) v.findViewById(R.id.tvHouseHoldSize);
         TextView tvNumProducts = (TextView) v.findViewById(R.id.tvNumOfProducts);
         TextView tvNumClaims = (TextView) v.findViewById(R.id.tvNumOfClaims);
         TextView tvTimeWithSF = (TextView) v.findViewById(R.id.tvYearsWithSF);
-
+        ProgressBar pb = (ProgressBar) v.findViewById(R.id.progressBar);
 
         Bundle bundle = getArguments();
         tvName.setText(bundle.getString(Constants.NAME));
@@ -50,15 +51,15 @@ public class DetailFragment extends Fragment {
         tvAddress2.setText(bundle.getString(Constants.CITYSTATE));
         tvPhone.setText(bundle.getString(Constants.PHONE));
         tvEmail.setText(bundle.getString(Constants.EMAIL));
-        tvPrice.setText(bundle.getInt(Constants.PREMIUM)+"");
+        tvPrice.setText("Price: $" + bundle.getInt(Constants.PREMIUM));
         tvIsShopping.setText(bundle.getString(Constants.SHOPPING));
         tvPendingRateIncrease.setText(bundle.getString(Constants.RATEINCREASETIME)+" "+bundle.getInt(Constants.RATEINCREASEPERCENT)+"%");
-        tvAge.setText(bundle.getInt(Constants.AGE)+"");
-        tvHouseholdSize.setText(bundle.getInt(Constants.HOUSESIZE)+"");
-        tvNumProducts.setText(bundle.getString(Constants.POLICIES));
-        tvNumClaims.setText(bundle.getInt(Constants.NUMCLAIMS)+"");
+        tvAge.setText("Age: " + bundle.getInt(Constants.AGE)+"");
+        tvHouseholdSize.setText("Household Size: " + bundle.getInt(Constants.HOUSESIZE)+"");
+        tvNumProducts.setText("Products: " + bundle.getString(Constants.POLICIES));
+        tvNumClaims.setText("# of Claims: " + bundle.getInt(Constants.NUMCLAIMS)+"");
         tvTimeWithSF.setText(bundle.getString(Constants.TIMEWITHSF));
-
+        pb.setProgress(bundle.getInt(Constants.PREMIUM)/10);
         return v;
     }
 

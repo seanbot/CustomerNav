@@ -48,6 +48,9 @@ public class MainActivity extends ActionBarActivity implements MainActivityFragm
         bundle.putInt(Constants.HOUSESIZE, c.getHouseholdSize());
         bundle.putString(Constants.TIMEWITHSF, c.getTimeWithStateFarm());
         bundle.putInt(Constants.NUMCLAIMS, c.getNumClaims());
+        bundle.putString(Constants.RATEINCREASETIME, c.getRateIncreaseTime());
+        bundle.putString(Constants.RATEINCREASEPERCENT, c.getRateIncreasePercent());
+        bundle.putString(Constants.SHOPPING, c.getIsShopping());
         detailFrag.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, detailFrag).addToBackStack(null).commit();
     }

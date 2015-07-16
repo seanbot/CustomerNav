@@ -58,11 +58,11 @@
               "duration": "25 years",
               "claims": 4,
               "policies": "Auto, Home, Life",
-              "premium": 234,
+              "premium": 335,
               "shopping": "No",
               "type": "Relationship Seeker",
               "rateincreasetime": "none",
-              "rateincreasepercent": "",
+              "rateincreasepercent": "0",
               "discounts": 3
             },
             {
@@ -79,7 +79,7 @@
               "duration": "2 months",
               "claims": 0,
               "policies": "Auto",
-              "premium": 145,
+              "premium": 578,
               "shopping": "Yes",
               "type": "Frequent Shopper",
               "rateincreasetime": "1 month",
