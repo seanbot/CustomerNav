@@ -57,7 +57,14 @@ public class DetailFragment extends Fragment {
         tvPrice.setText("Price: $" + bundle.getInt(Constants.PREMIUM));
         tvIsShopping.setText(bundle.getString(Constants.SHOPPING));
         tvIsShopping.setTextColor(MainApplication.getInstance().getColorDependingOnShopping(bundle.getString(Constants.SHOPPING)));
-        tvPendingRateIncrease.setText(bundle.getString(Constants.RATEINCREASETIME)+" "+bundle.getString(Constants.RATEINCREASEPERCENT)+"%");
+        String rateIncreaseTime = bundle.getString(Constants.RATEINCREASETIME);
+        if (rateIncreaseTime.contentEquals("none")) {
+            tvPendingRateIncrease.setText("none");
+        }
+        else {
+            tvPendingRateIncrease.setText(rateIncreaseTime + " " + bundle.getString(Constants.RATEINCREASEPERCENT) + "%");
+        }
+        tvPendingRateIncrease.setTextColor(MainApplication.getInstance().getColorDependingOnRateIncrease(rateIncreaseTime));
         tvAge.setText("Age: " + bundle.getInt(Constants.AGE)+"");
         tvHouseholdSize.setText("Household Size: " + bundle.getInt(Constants.HOUSESIZE)+"");
         tvNumProducts.setText("Products: " + bundle.getString(Constants.POLICIES));
@@ -69,7 +76,7 @@ public class DetailFragment extends Fragment {
         }
         else {
             iv.setImageResource(R.drawable.ic_face_black_24dp);
-        }        pb.setProgress(bundle.getInt(Constants.PREMIUM)/10);
+        }        pb.setProgress(bundle.getInt(Constants.PREMIUM) / 10);
         return v;
     }
 

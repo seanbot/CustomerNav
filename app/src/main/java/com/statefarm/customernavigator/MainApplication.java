@@ -89,6 +89,12 @@ public class MainApplication extends Application {
         } else return Color.parseColor("#19BF32");
     }
 
+    public int getColorDependingOnRateIncrease(String rateIncreaseTime) {
+        if(rateIncreaseTime.toUpperCase().contentEquals("NONE")) {
+            return Color.parseColor("#19BF32");
+        } else return Color.parseColor("#F21818");
+    }
+
     public String loadJSONFromAsset(String filename) {
         String json = null;
         try {
