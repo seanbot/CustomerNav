@@ -83,6 +83,12 @@ public class MainApplication extends Application {
         } else return Color.BLACK;
     }
 
+    public int getColorDependingOnShopping(String shopping) {
+        if(shopping.toUpperCase().contentEquals("YES")) {
+            return Color.parseColor("#F21818");
+        } else return Color.parseColor("#19BF32");
+    }
+
     public String loadJSONFromAsset(String filename) {
         String json = null;
         try {

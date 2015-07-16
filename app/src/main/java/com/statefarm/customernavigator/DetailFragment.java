@@ -56,7 +56,8 @@ public class DetailFragment extends Fragment {
         tvEmail.setText(bundle.getString(Constants.EMAIL));
         tvPrice.setText("Price: $" + bundle.getInt(Constants.PREMIUM));
         tvIsShopping.setText(bundle.getString(Constants.SHOPPING));
-        tvPendingRateIncrease.setText(bundle.getString(Constants.RATEINCREASETIME)+" "+bundle.getInt(Constants.RATEINCREASEPERCENT)+"%");
+        tvIsShopping.setTextColor(MainApplication.getInstance().getColorDependingOnShopping(bundle.getString(Constants.SHOPPING)));
+        tvPendingRateIncrease.setText(bundle.getString(Constants.RATEINCREASETIME)+" "+bundle.getString(Constants.RATEINCREASEPERCENT)+"%");
         tvAge.setText("Age: " + bundle.getInt(Constants.AGE)+"");
         tvHouseholdSize.setText("Household Size: " + bundle.getInt(Constants.HOUSESIZE)+"");
         tvNumProducts.setText("Products: " + bundle.getString(Constants.POLICIES));

@@ -6,6 +6,7 @@ package com.statefarm.customernavigator;
 public class Customer {
     private String name;
     private Integer age;
+    private String type;
     private String priority;
     private String gender;
     private String dob;
@@ -38,6 +39,14 @@ public class Customer {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getDob() {
